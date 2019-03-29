@@ -1,31 +1,28 @@
 <template>
   <div id="app" v-if="status === 'Ready'">
     <Header :title="title"/>
-    <img width="25%" src="./assets/logo.png">
-    <h1>{{ hello }}</h1>
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
+    <MoviesList/>
   </div>
   <div v-else-if="status === 'Loading'">Loading</div>
   <div v-else>Error</div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 import Header from "./components/Header";
+import MoviesList from "./components/MoviesList";
 
 export default {
   name: "App",
   data() {
     return {
-      hello: "Hello World",
       title: "Vue Movie DB",
       isTrue: false,
       status: "Ready"
     };
   },
   components: {
-    HelloWorld,
-    Header
+    Header,
+    MoviesList
   }
 };
 </script>
