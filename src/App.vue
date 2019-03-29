@@ -1,17 +1,26 @@
 <template>
   <div id="app">
+    <Header :title="title"/>
     <img width="25%" src="./assets/logo.png">
-    <HelloWorld/>
+    <HelloWorld msg="Hello World"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
+import Header from "./components/Header";
 
 export default {
   name: "App",
+  data() {
+    return {
+      hello: "Hello World",
+      title: "Vue Movie DB"
+    };
+  },
   components: {
-    HelloWorld
+    HelloWorld,
+    Header
   }
 };
 </script>
