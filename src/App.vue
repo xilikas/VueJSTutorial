@@ -20,7 +20,7 @@ export default {
       hello: "Hello World",
       title: "Vue Movie DB",
       isTrue: false,
-      status: "Loading"
+      status: "Ready"
     };
   },
   components: {
