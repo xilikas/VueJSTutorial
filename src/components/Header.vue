@@ -1,7 +1,9 @@
 <template>
   <header>
     <h1>
-      <router-link to="/">{{ title }}</router-link>
+      <router-link to="/">
+        <img src="../assets/logo.svg">
+      </router-link>
     </h1>
   </header>
 </template>
