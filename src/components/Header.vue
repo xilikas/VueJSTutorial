@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>{{ newTitle }}</h1>
+    <h1><router-link to="/">{{ title }}</router-link></h1>
   </header>
 </template>
 
@@ -13,11 +13,6 @@ export default {
   data() {
     return {
       name: "Fil"
-    }
-  },
-  computed: {
-    newTitle: function() {
-      return this.title;
     }
   }
 };
